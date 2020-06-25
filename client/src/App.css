@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+/* font-family: 'Playfair Display SC', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&family=Playfair+Display+SC&display=swap');
+/* font-family: 'Josefin Slab',
+serif;
+font-family: 'Playfair Display SC',
+serif; */
+*{
+  font-family: 'Playfair Display SC',
+  serif;
+  font-family: 'Josefin Slab', serif;
+}
+#header{
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+}
+#root{
+  height: 100%;
+}
+.sign-up-form, .sign-in-form{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 5%;
+  transform: translateY(-5%);
+}
+.nav-link{
+  color: white !important;
+}
+.navbar-collapse{
+  background: #343a40 !important;
+  z-index: 1000000000
+}
+input{
+  color: black !important;
+}
+.white{
+  color: white !important;
+  
+}
+html {
+  /* background: linear-gradient(to bottom, rgb(1, 10, 14), #a70404); */
+  /* background: black; */
+  height: 100%;
+}
+body{
+  height: 100%;
+  /* background: rgba(184, 111, 111, 0.062); */
+  background: #ddd;
+  background: black;
+  background: linear-gradient(to bottom, rgb(16, 108, 121), #070707);
+  background: linear-gradient(to bottom, rgba(2, 0, 7, 0.61), #052f47);
+  background: linear-gradient(to bottom, rgb(7, 7, 7), #5e0202);
+
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background: white; */
+}
+.entire-container{
+  opacity: 0.5;
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+    font-family: 'Playfair Display SC',
+    serif;
+    font-family: 'Josefin Slab',
+    serif;
+
+}
+.search-container{
+  width: 300px;
+  display: flex;
+  left: 50%;
+  top: 0;
+  position: absolute;
+  transform: translateX(-50%);
+}
+#search-box{
+  border: 1px solid white;
+  border-radius: 10rem;
+  margin-top: 13px;
+  padding-left: 10px;
+  color: white;
+}
+#search-icon{
+  /* border: 1px solid blue; */
+  position: relative;
+  right: 10%;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 670px) {
+  .search-container{
+    width: 50%;
+  }
+   #search-icon {
+     right: 15% !important;
+   }
+   nav {
+     /* line-height: 75px !important; */
+   }
+}
+@media only screen and (min-width: 601px){
+  nav i {
+    /* line-height: 75px !important; */
+    padding-right: 10px !important;
+  }
+ 
+}
+
+#search-icon{
+  cursor: pointer;
+}
+
+/* LANDING PAGE CSS */
+.main-header {
+  text-align: center;
+  color: white
+}
+.landing-container{
+  text-align: center;
+  margin: 0 auto;
+  width: 95%;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.image-container{
+  /* border: 1px solid black; */
+  margin-bottom: 1.5rem;
+  width: 240px;
+}
+.image-container > img{
+  width: 90%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+.image-container >img:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 5px grey;
+  box-shadow: 0 0 10px white;
+}
+.button-container{
+  text-align: center;
+  display: flex;
+  justify-content: center
+}
+.button-container > button{
+  margin-right: 1%;
+}
+.button-container a{
+  margin: 1.2rem;
+}
+
+@media only screen and (max-width: 970px) {
+  .image-container {
+    /* border: 1px solid black; */
+    /* margin-bottom: 1.5rem; */
+    width: 150px;
+  }
+}
+
+
+/* SideBar */
+.card{
+  color: black;
+  text-align: left;
+}
+.card-text{
+  font-family: 'Josefin Slab',
+  serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-family: 'Playfair Display SC', */
+}
+.slide-container{
+  width: 25%;
+  background: rgb(75, 73, 73);
+  background: black;
+  color: white;
+  /* opacity: 0.9; */
+  height: 100vh;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: transform 300ms ease-in-out;
+  overflow: auto;
+  z-index: 90000000000000000000
+}
+.navbar-nav .form-inline {
+  flex-flow: column;
+}
+.navbar-nav .form-inline input{
+  margin-bottom: 2%;
+}
+.navbar-nav button, navbar-nav input{
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+ .slide-container.showThis {
+   width: 50%;
+ }
+  .slide-container.hideThis {
+   width: 50%;
+  }
+  .fav-card-container{
+    width: 100% !important;
+  }
+}
+@media only screen and (min-width: 768px){
+  .slide-container.showThis{
+    width: 40%;
+  }
+  .slide-container.hideThis {
+    width: 40%;
+
+  }
+}
+/* if bigger than 992px */
+@media only screen and (min-width: 992px) {
+  .slide-container.showThis {
+    width: 30%;
+  }
+  .slide-container.hideThis {
+    width: 30%;
+  }
+  .navbar-nav .form-inline{
+    flex-flow: row;
+  }
+  .navbar-nav .form-inline input {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .slide-container.showThis {
+    width: 20%;
+  }
+  .slide-container.hideThis {
+    width: 20%;
+  }
+}
+.slide-container.hideThis {
+  transform: translate3d(100vw, 0, 0);
+  /* display: none; */
+}
+.slide-container.showThis{
+  transform: translate3d(1vw, 0, 0);
+  /* overflow: hidden; */
+}
+
+.detail-container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+/* SignUp */
+.sign-up-form{
+  width: 20%;
+  margin: 0 auto;
+}
+.sign-up-form input, .sign-up-form label{
+  color: white;
+}
+
+/* Card */
+.fav-card-container{
+  width: 15%;
+  height: fit-content;
+}
+.fav-card-container .card-body{
+  font-size: 13px;
+  height: 30vh;
+  overflow: auto;
+}
+.card-container{
+  /* border: 1px solid  white; */
+  width: 80%;
+  width: 50%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.jumbotron .img-fluid{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.jumbotron{
+  background: linear-gradient(to bottom, rgb(7, 7, 7), #5e0202);
+}
+@media only screen and (max-width: 600px) {
+  .jumbotron .img-fluid {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .jumbotron .img-fluid {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .jumbotron .img-fluid {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .card-container {
+    width: 50%
+  }
+}
